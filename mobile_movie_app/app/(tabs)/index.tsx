@@ -13,6 +13,7 @@ import SearchBar from "@/components/SearchBar";
 import { useRouter } from "expo-router";
 import useFetch from "@/services/useFetch";
 import { fetchMovies } from "@/services/api";
+import MovieCard from "@/components/MovieCard";
 
 export default function Index() {
   const router = useRouter();
@@ -60,9 +61,7 @@ export default function Index() {
                 marginBottom: 10,
               }}
               keyExtractor={(item) => item.id.toString()}
-              renderItem={({ item }) => (
-                <Text className="text-white">{item.title}</Text>
-              )}
+              renderItem={({ item }) => <MovieCard />}
             />
           </View>
         )}
