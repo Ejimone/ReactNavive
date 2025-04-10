@@ -5,6 +5,7 @@ export default function Index() {
     <View className="flex-1 items-center justify-center items-center">
       <Text className="text-5xl text-blue-500 font-bold text-primary">Erico Nwa Aba</Text>
       <Text className="text-2xl text-blue-500 font-bold text-accent">Welcome to OpenCode</Text>
+      <link href="/onboarding">Onboarding</link>
     </View>
   );
 }
